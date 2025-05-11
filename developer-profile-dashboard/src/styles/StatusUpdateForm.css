@@ -1,0 +1,86 @@
+.status-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.status-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.status-header h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: 0;
+}
+
+.edit-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.edit-btn:hover {
+  background-color: var(--color-bg-accent);
+  text-decoration: underline;
+}
+
+.status-display {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.status-message {
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+  padding: var(--space-2);
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-bg-accent);
+  border-left: 3px solid var(--color-accent);
+  margin-bottom: 0;
+}
+
+.status-empty {
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.status-form {
+  animation: fadeIn 0.3s ease;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

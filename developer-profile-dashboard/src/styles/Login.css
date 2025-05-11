@@ -1,0 +1,64 @@
+.login-container {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: var(--space-5);
+}
+
+.login-header {
+  margin-bottom: var(--space-4);
+}
+
+.login-logo {
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.login-subtitle {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.login-btn {
+  width: 100%;
+  padding: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.login-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+  padding: var(--space-2);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--space-3);
+  animation: shake 0.5s ease-in-out;
+}
+
+.login-info {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-4);
+}
+
+.btn-spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}

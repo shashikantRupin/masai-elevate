@@ -1,0 +1,38 @@
+.not-found-container {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-4);
+}
+
+.not-found-icon {
+  color: var(--color-warning);
+  margin-bottom: var(--space-3);
+  animation: pulse 2s infinite;
+}
+
+.not-found-container h1 {
+  font-size: 6rem;
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.not-found-container h2 {
+  margin-bottom: var(--space-3);
+}
+
+.not-found-container p {
+  max-width: 500px;
+  margin-bottom: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
