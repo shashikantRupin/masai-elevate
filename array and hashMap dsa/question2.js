@@ -26,7 +26,6 @@ function topElements(arr, k) {
     result[i] = mostFrequent;
     delete obj[mostFrequent];
   }
-
   console.log("most-frequent", result);
 }
 const arr = [1, 2, 1, 3, 4, 3, 1, 4, 4, 4];
